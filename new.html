@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja" class="panel-new">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>最新のお知らせ</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+  .link-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 12px;
+    max-width: 600px;
+    background-color: #fafafa;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  }
+
+  .link-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+  }
+
+  .link-card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .link-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .link-card-text {
+    flex: 1;
+    margin-right: 12px;
+  }
+
+  .link-card-text p {
+    margin: 4px 0;
+    font-size: 0.95em;
+  }
+
+  .link-card-img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  .my-button {
+      background-color: #666;
+      color: white !important;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1em;
+      display: inline-block;
+      transition: box-shadow 0.2s ease;
+    }
+    .my-button:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      color: black !important;
+      background-color: #f0d0b0; 
+    }
+</style>
+</head>
+<body>
+  <img src="new.png" alt="背景画像" class="bg-image">
+  <main class="main-content">
+    <div class="content">
+      <h1>更新状況</h1>
+      <div class="line-silver"></div>
+<p class="larger-text">こちらのページでは、企画に関する最新情報や重要なお知らせを随時更新していきます。</p>
+
+<h2 class="green larger-text">2025年 <span id="today-date">〇月 〇日</span>現在、<br><span class=big-heading>【応募の受け付け・<span class="mobile-br"></span>審査中】</span><br>です。</h2>
+<br>
+<p>また、この企画と並行して、ブザー男性本人による婚活ブログも毎日更新される予定です。</p>
+
+<p>自己紹介・質問回答などがアップされるので、ぜひチェックしてみてください！</p>
+<br>
+<a href="https://con-cats.hatenablog.com/" target="_blank" class="link-card">
+  <div class="link-card-title">ひたすら自己紹介を続けて、いいお相手に巡り会えるのを待つブログ</div>
+  <div class="link-card-body">
+    <div class="link-card-text">
+      <p>企画の補足事項や質問回答を随時更新中。<br>（ここから最新ページに飛びます。）</p>
+      <p style="color: #0077cc;">https://con-cats.hatenablog.com/</p>
+    </div>
+    <img src="concats.png" alt="ブログサムネイル" class="link-card-img" />
+  </div>
+</a>
+<br>
+<p>初めてご訪問いただいた方は、以下の「企画スタート記事」および「自己紹介まとめ記事」をご一読いただけますと幸いです。</p>
+<a href="URL" class="my-button" target="_blank">
+  🌟 企画スタート記事を読む（未更新）
+</a>
+<br><br>
+<a href="URL" class="my-button" target="_blank">
+  📝 自己紹介まとめを見る（未更新）
+</a>
+  
+<script>
+  // 今日の日付を「〇月 〇日」形式で表示
+  const dateEl = document.getElementById('today-date');
+  const today = new Date();
+  const month = today.getMonth() + 1;
+  const day = today.getDate();
+  dateEl.textContent = `${month}月 ${day}日`;
+</script>
+    </div> <!-- /content -->
+
+    <footer class="footer-nav">
+      <nav>
+        <div class="row top-row">
+          <a href="index.html" class="footer-link">TOP PAGE</a>
+        </div>
+        <div class="row">
+          <a href="about.html" class="footer-link">About<br>企画について</a>
+          <a href="flow.html" class="footer-link">Timeline<br>企画の流れ</a>
+        </div>
+        <div class="row">
+          <a href="profile.html" class="footer-link">Profile<br>自己紹介</a>
+          <a href="tanu.html" class="footer-link">Tanukana<br>協力者コメント</a>
+        </div>
+        <div class="row">
+          <a href="chatroom.html" class="footer-link">Chat Room<br>チャット閲覧ルーム</a>
+          <a href="https://forms.gle/kJtGE3bRugAF6WcD7" target="_blank"
+            rel="noopener noreferrer"class="footer-link">Entry<br>応募フォーム</a>
+        </div>
+        <div class="row">
+          <a href="https://marshmallow-qa.com/wiweivdtd7c8o44" target="_blank"
+            rel="noopener noreferrer"class="footer-link">Q&amp;A<br>マシュマロ質問</a>
+          <a href="new.html" class="footer-link current">New<br>更新状況</a>
+        </div>
+        <div class="row">
+          <a
+            href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftanpen-rendezvous.github.io%2F&text=たぬかなさん紹介のマッチング企画「短編ランデブー」"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="twitter-share-button"
+          >
+            <img src="twitter-icon.png" alt="Twitterでシェア" class="icon" />
+            Twitterでシェア
+          </a>
+        </div>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>

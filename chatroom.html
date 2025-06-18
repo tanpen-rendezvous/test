@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja" class="panel-chat">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>チャット閲覧ルーム</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bg-image {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 300px;
+      opacity: 0.25;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .chat-page {
+      position: relative;
+      display: flex;
+      height: 100vh;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+    }
+
+    .chat-page::before {
+      content: '';
+      background-image: url('http://tanutanptest2025.free.nf/wp-content/uploads/2025/06/door.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.25;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: -1;
+    }
+
+    .chat-text {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <img src="cview.png" alt="背景画像" class="bg-image">
+
+  <main class="main-content">
+    <div class="content">
+      <div class="line-gold"></div>
+      <h1>🚪チャット閲覧ルーム</h1>
+      <div class="line-gold"></div>
+
+      <div class="chat-page">
+        <div class="chat-text">
+          <p>―準備中―</p>
+          <p>企画が進行し、候補者の選考が終わり次第、ここにチャットルームがオープンします。</p>
+        </div>
+      </div>
+    </div> <!-- /content -->
+
+    <footer class="footer-nav">
+      <nav>
+        <div class="row top-row">
+          <a href="index.html" class="footer-link">TOP PAGE</a>
+        </div>
+        <div class="row">
+          <a href="about.html" class="footer-link">About<br>企画について</a>
+          <a href="flow.html" class="footer-link">Timeline<br>企画の流れ</a>
+        </div>
+        <div class="row">
+          <a href="profile.html" class="footer-link">Profile<br>自己紹介</a>
+          <a href="tanu.html" class="footer-link">Tanukana<br>協力者コメント</a>
+        </div>
+        <div class="row">
+          <a href="chatroom.html" class="footer-link current">Chat Room<br>チャット閲覧ルーム</a>
+          <a href="https://forms.gle/kJtGE3bRugAF6WcD7" target="_blank"
+            rel="noopener noreferrer"class="footer-link">Entry<br>応募フォーム</a>
+        </div>
+        <div class="row">
+          <a href="https://marshmallow-qa.com/wiweivdtd7c8o44" target="_blank"
+            rel="noopener noreferrer"class="footer-link">Q&amp;A<br>マシュマロ質問</a>
+          <a href="new.html" class="footer-link">New<br>更新状況</a>
+        </div>
+        <div class="row">
+          <a
+            href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftanpen-rendezvous.github.io%2F&text=たぬかなさん紹介のマッチング企画「短編ランデブー」"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="twitter-share-button"
+          >
+            <img src="twitter-icon.png" alt="Twitterでシェア" class="icon" />
+            Twitterでシェア
+          </a>
+        </div>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>
