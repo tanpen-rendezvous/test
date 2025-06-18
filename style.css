@@ -237,6 +237,10 @@ h1 span {
   padding-bottom: 0.3em;
 }
 
+h1.align-left {
+  text-align: left;
+}
+
 h2 {
   font-size: clamp(1.2rem, 3vw, 1.6rem);
   padding: 0.4em 0.8em;
@@ -246,6 +250,30 @@ h2 {
   margin-top: 2em;
   margin-bottom: 1em;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2.black {
+  border-left-color: #606060;
+}
+
+h2.blue {
+  border-left-color: #2196F3;
+}
+
+h2.green {
+  border-left-color: #4CAF50;
+}
+
+h2.purple {
+  border-left-color: #9C27B0;
+}
+
+h2.red {
+  border-left-color: #F44336;
+}
+
+h2.pink {
+  border-left-color: #F96E83;
 }
 
 h3 {
@@ -263,6 +291,10 @@ h3 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+.big-heading {
+  font-size: 2rem;
 }
 
 .mobile-br::before {
