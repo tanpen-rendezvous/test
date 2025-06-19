@@ -519,7 +519,7 @@ a {
   padding: 0.2rem 0.8rem;
   text-align: center;
   border-radius: 0.8rem;
-  background: rgba(255 255 255 / 0.75);
+  background: rgba(255 255 255 / 0.9);
   box-shadow: 0 0 5px rgb(0 0 0 / 0.08);
   transition: 0.3s;
   user-select: none;
@@ -543,7 +543,7 @@ a {
 
 .footer-link.current {
   color: #333;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(200, 200, 200, 0.8);
   pointer-events: none;
   cursor: default;
   box-shadow: none;
